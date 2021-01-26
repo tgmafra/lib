@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="icon.png">
+<link rel="stylesheet" type="text/css" href="menu.css">
+  <title></title>
+  <style type="text/css">
+    body{
+      background-color: #111111;
+    }
+
+    .navbar{
+      color: white;
+  font-family: Arial;
+  text-align: center;
+    }
+
+label {
+  text-align: center;
+  color: white;
+  font-family: Arial;
+  position: center;
+  padding: 15px;
+  font-size: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<ul style="background-color: black">
+  <br><br>
+  <li><a href="index.html" style="border-radius: 5px;"><i class="fa fa-home"></i>&nbsp Inicio</a></li><br><br>
+  <li><a href="Antena.html"  style="border-radius: 5px;">Inserir dados</a></li><br><br>
+  <li><a href="Visualizar.html" target="_blank" style="border-radius: 5px;">Visualizar dados</a></li><br><br>
+  <li><a href="eliminar.html" style="border-radius: 5px;">Eliminar dados</a></li><br><br>
+  <li><a href="relatorios.html" target="_blank" style="border-radius: 5px;">Relatórios</a></li><br><br>
+</ul>
+
+<div class="black">
+<div class="navbar">
+  <br>
+  <a href="eliminar.html" style="border-radius: 5px;">Livro</a>
+  <a href="eliminar_recetor.html" style="border-radius: 5px;">Autor</a>
+  <a href="eliminar_softwares.html" style="border-radius: 5px;">Editora</a>
+  <br><br>
+</div>
+</div>
+<br><br><br>
+<h1>Eliminar Autor</h1>
+<br><br><br><br><br><br><br><br>
+<div class="form">
+<form method="delete" action = "/api/autor">
+
+  <label for="id">Insire um ID:</label>
+  <input name ="id" type="number" required> <br> <br>
+  <button class="button">Eliminar</button>
+</form>
+</div>
+
+</body>
+</html>

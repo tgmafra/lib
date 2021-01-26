@@ -1,0 +1,128 @@
+body{ 
+	background-color: #1A1A1A;
+	margin:0;
+}
+
+.form{/* texto do inserir dados */
+      margin-top: 0%;
+      margin-left: 40%;
+      color: white;
+      font-family: Arial;
+    }
+
+ h1{ /* Títulos do inserir dados */
+  text-align: center;
+  color: white;
+  font-family: Arial;
+  position: center;
+ }
+
+
+/* menu principal */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li {
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0px;
+  letter-spacing: 3px;
+  padding: 14px 30px;
+  text-align: center;  
+}
+
+li a { 
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  margin-bottom: -70%;
+  
+}
+
+li a:hover{
+  background-color: #BDBDFF;
+  color: black;
+}
+
+
+/* menu secundário */
+
+  .navbar { 
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
+  color: white;
+text-align: center;
+padding-bottom: 15px;
+  
+}
+
+.navbar a {
+ 
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+}
+
+
+
+.navbar a:hover {
+  background-color: #BDBDFF;
+  color: black;
+}
+
+.black{
+  background-color: black;
+}
+
+
+/* butão submeter */
+
+.button{
+  position: relative;
+  background-color: #BDBDFF;
+  border: none;
+  font-size: 28px;
+  color: black;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #DDDDFF;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px ;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
